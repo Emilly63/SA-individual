@@ -1,43 +1,44 @@
 # 🏭 Sistema de Controlo de Estoque - Indústria 4.0
 
-[cite_start]Este projeto foi desenvolvido como parte da **Situação de Aprendizagem (SA)** da Unidade Curricular 02, sob a orientação do Professor **Cláudio Iwakami**[cite: 144, 145]. [cite_start]O sistema foca no gerenciamento de inventário para fábricas inteligentes, utilizando tecnologias de desenvolvimento desktop e persistência de dados em SQL[cite: 2, 3].
+Este projeto foi desenvolvido como parte da **Situação de Aprendizagem (SA)** da Unidade Curricular Desenvolvimento de Sistemas, sob a orientação do Professor **Cláudio Iwakami** O sistema foca no gerenciamento de inventário para fábricas inteligentes, utilizando tecnologias de desenvolvimento desktop e persistência de dados em SQL.
 
 ## 🚀 Tecnologias Utilizadas
-* [cite_start]**Linguagem:** C# (.NET 8.0) [cite: 30]
-* [cite_start]**Interface:** Windows Forms (WinForms) [cite: 5]
-* [cite_start]**Banco de Dados:** MySQL [cite: 72]
-* [cite_start]**Arquitetura:** Padrão DAO (Data Access Object) [cite: 185]
+* **Linguagem:** C# (.NET 8.0) 
+* **Interface:** Windows Forms (WinForms) 
+* **Banco de Dados:** MySQL 
+* **Arquitetura:** Padrão DAO (Data Access Object) 
 
 ## 📋 Especificações do Sistema
 
 ### Requisitos Funcionais (RF)
-* [cite_start]**RF01:** Cadastro completo de produtos: Nome, Código, Quantidade e Preço[cite: 25].
-* [cite_start]**RF02:** Listagem automática e consulta em tempo real via `DataGridView`[cite: 27].
-* [cite_start]**RF03:** Atualização de dados de produtos selecionados[cite: 108].
-* [cite_start]**RF04:** Remoção de itens do estoque através do ID[cite: 109].
-* [cite_start]**RF05:** Geração de relatório consolidado (Soma de itens e Valor Patrimonial)[cite: 110].
+* **RF01:** Cadastro completo de produtos: Nome, Código, Quantidade e Preço.
+* **RF02:** Listagem automática e consulta em tempo real via `DataGridView`.
+* **RF03:** Atualização de dados de produtos selecionados.
+* **RF04:** Remoção de itens do estoque através do ID.
+* **RF05:** Geração de relatório consolidado (Soma de itens e Valor Patrimonial).
 
 ### Regras de Negócio (RN)
-* [cite_start]**RN01:** O **Código** do produto deve ser único para evitar duplicidade[cite: 157, 162].
-* [cite_start]**RN02:** O campo **Id** deve ser gerado automaticamente (Chave Primária)[cite: 153].
-* [cite_start]**RN03:** O cálculo do **Valor Total** deve multiplicar a quantidade pelo preço unitário[cite: 167].
+* **RN01:** O **Código** do produto deve ser único para evitar duplicidade.
+* **RN02:** O campo **Id** deve ser gerado automaticamente (Chave Primária).
+* **RN03:** O cálculo do **Valor Total** deve multiplicar a quantidade pelo preço unitário.
 
 ## 📊 Modelagem Técnica
 
 ### Diagrama de Classes UML
-[cite_start]A arquitetura do sistema separa a interface do usuário da lógica de banco de dados, utilizando as classes `Form1` e `ProdutoDAO`[cite: 172, 185].
+A arquitetura do sistema separa a interface do usuário da lógica de banco de dados, utilizando as classes `Form1` e `ProdutoDAO`.
 
 
 
 ### Diagrama de Banco de Dados (DER)
-[cite_start]A tabela `Produtos` foi estruturada para garantir a integridade referencial e unicidade de registros[cite: 192].
+A tabela `Produtos` foi estruturada para garantir a integridade referencial e unicidade de registros.
 
 
 
 ## 💻 Como Executar o Projeto
 1. Clone este repositório para a sua máquina local.
-2. [cite_start]No seu MySQL Workbench, execute o script SQL contido no ficheiro `banco.sql`[cite: 143].
-3. [cite_start]Certifique-se de que a `connectionString` no arquivo `ProdutoDAO.cs` possui as suas credenciais locais[cite: 186].
+2. No seu MySQL Workbench, execute o script SQL contido no ficheiro `banco.sql`.
+3. Certifique-se de que a `connectionString` no arquivo `ProdutoDAO.cs` possui as suas credenciais locais.
 4. No terminal da pasta do projeto, execute:
    ```bash
    dotnet run
+
