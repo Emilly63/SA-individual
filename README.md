@@ -3,6 +3,7 @@
 Este projeto foi desenvolvido como parte da **Situação de Aprendizagem (SA)** da Unidade Curricular Desenvolvimento de Sistemas, sob a orientação do Professor **Cláudio Iwakami** O sistema foca no gerenciamento de inventário para fábricas inteligentes, utilizando tecnologias de desenvolvimento desktop e persistência de dados em SQL.
 
 ## 🚀 Tecnologias Utilizadas
+* **Editor de Código:** Visual Studio Code (VS Code)
 * **Linguagem:** C# (.NET 8.0) 
 * **Interface:** Windows Forms (WinForms) 
 * **Banco de Dados:** MySQL 
@@ -41,4 +42,5 @@ A tabela `Produtos` foi estruturada para garantir a integridade referencial e un
 4. No terminal da pasta do projeto, execute:
    ```bash
    dotnet run
+
 
